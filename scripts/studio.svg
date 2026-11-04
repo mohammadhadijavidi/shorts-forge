@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <!-- Synthetic podcast-studio backdrop for the shorts-forge demo video (original artwork).
+       It avoids the caption highlight yellow on purpose so tests can detect burned captions. -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a2233"/>
+      <stop offset=".55" stop-color="#241d3a"/>
+      <stop offset="1" stop-color="#120f1d"/>
+    </linearGradient>
+    <radialGradient id="spot" cx=".5" cy=".38" r=".55">
+      <stop offset="0" stop-color="#3b3566" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#3b3566" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="warm" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ff9a3c" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cool" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#5cc8ff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#5cc8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+    <linearGradient id="slat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a2440"/>
+      <stop offset="1" stop-color="#1b1730"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="blur2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#wall)"/>
+  <!-- acoustic slats, softly out of focus -->
+  <g filter="url(#blur2)" opacity=".8">
+    <rect x="40" y="0" width="34" height="720" fill="url(#slat)"/>
+    <rect x="92" y="0" width="34" height="720" fill="url(#slat)"/>
+    <rect x="144" y="0" width="34" height="720" fill="url(#slat)"/>
+    <rect x="1102" y="0" width="34" height="720" fill="url(#slat)"/>
+    <rect x="1154" y="0" width="34" height="720" fill="url(#slat)"/>
+    <rect x="1206" y="0" width="34" height="720" fill="url(#slat)"/>
+  </g>
+  <rect width="1280" height="720" fill="url(#spot)"/>
+  <!-- shelf with blurred props -->
+  <g filter="url(#blur)">
+    <rect x="250" y="430" width="780" height="10" fill="#0e0c18"/>
+    <rect x="300" y="360" width="46" height="70" rx="6" fill="#3a2f5c"/>
+    <rect x="356" y="380" width="30" height="50" rx="4" fill="#5b4a2e"/>
+    <circle cx="900" cy="400" r="28" fill="#2a4a5c"/>
+    <rect x="950" y="370" width="22" height="60" rx="4" fill="#4a2f3f"/>
+  </g>
+  <!-- bokeh practical lights -->
+  <g filter="url(#blur)">
+    <circle cx="220" cy="160" r="70" fill="url(#warm)"/>
+    <circle cx="1060" cy="130" r="90" fill="url(#cool)"/>
+    <circle cx="980" cy="560" r="60" fill="url(#warm)" opacity=".6"/>
+    <circle cx="330" cy="590" r="80" fill="url(#cool)" opacity=".5"/>
+  </g>
+  <!-- neon sign -->
+  <g opacity=".85">
+    <text x="1040" y="300" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="44"
+          fill="none" stroke="#ff3b5c" stroke-width="6" filter="url(#blur)" opacity=".7">ON AIR</text>
+    <text x="1040" y="300" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="44"
+          fill="none" stroke="#ffd0d8" stroke-width="2">ON AIR</text>
+  </g>
+  <rect width="1280" height="720" fill="url(#vig)"/>
+</svg>

@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+.pytest_cache/
+.ruff_cache/
+# outputs
+shorts/
+demo-shorts/
+api-shorts/
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3

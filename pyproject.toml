@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shorts-forge"
+version = "0.1.0"
+description = "Turn long videos into viral vertical shorts with AI: Whisper transcription, LLM hook scoring, face-tracked 9:16 reframing and animated word-by-word captions, all rendered with ffmpeg."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mohammad Hadi Javidi" }]
+requires-python = ">=3.10"
+keywords = ["shorts", "youtube-shorts", "tiktok", "reels", "video-clipping", "whisper",
+            "faster-whisper", "llm", "face-tracking", "captions", "ffmpeg", "opus-clip-alternative"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Multimedia :: Video :: Conversion",
+  "Environment :: Console",
+]
+dependencies = [
+  "opencv-python-headless>=4.8",
+  "numpy>=1.23",
+]
+
+[project.optional-dependencies]
+whisper = ["faster-whisper>=1.1"]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/mohammadhadijavidi/shorts-forge"
+Issues = "https://github.com/mohammadhadijavidi/shorts-forge/issues"
+
+[project.scripts]
+shorts-forge = "shorts_forge.cli:main"
+
+[tool.setuptools]
+packages = ["shorts_forge"]
+
+[tool.setuptools.package-data]
+shorts_forge = ["fonts/*", "models/*", "demo/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

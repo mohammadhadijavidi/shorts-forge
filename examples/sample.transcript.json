@@ -1,0 +1,1134 @@
+{
+ "_note": "SAMPLE transcript: hand-written demo script with synthetic word timings, not real Whisper output. Matches the video made by shorts-forge demo.",
+ "segments": [
+  {
+   "start": 1.0,
+   "end": 6.025,
+   "text": "Okay so welcome back to the channel, today is a slightly different episode.",
+   "words": [
+    {
+     "start": 1.0,
+     "end": 1.313,
+     "word": "Okay"
+    },
+    {
+     "start": 1.34,
+     "end": 1.552,
+     "word": "so"
+    },
+    {
+     "start": 1.57,
+     "end": 2.035,
+     "word": "welcome"
+    },
+    {
+     "start": 2.075,
+     "end": 2.388,
+     "word": "back"
+    },
+    {
+     "start": 2.415,
+     "end": 2.627,
+     "word": "to"
+    },
+    {
+     "start": 2.645,
+     "end": 2.907,
+     "word": "the"
+    },
+    {
+     "start": 2.93,
+     "end": 3.445,
+     "word": "channel,"
+    },
+    {
+     "start": 3.49,
+     "end": 3.853,
+     "word": "today"
+    },
+    {
+     "start": 3.885,
+     "end": 4.097,
+     "word": "is"
+    },
+    {
+     "start": 4.115,
+     "end": 4.317,
+     "word": "a"
+    },
+    {
+     "start": 4.335,
+     "end": 4.85,
+     "word": "slightly"
+    },
+    {
+     "start": 4.895,
+     "end": 5.461,
+     "word": "different"
+    },
+    {
+     "start": 5.51,
+     "end": 6.025,
+     "word": "episode."
+    }
+   ]
+  },
+  {
+   "start": 6.52,
+   "end": 10.605,
+   "text": "I want to talk about the way most people edit their videos.",
+   "words": [
+    {
+     "start": 6.52,
+     "end": 6.722,
+     "word": "I"
+    },
+    {
+     "start": 6.74,
+     "end": 7.053,
+     "word": "want"
+    },
+    {
+     "start": 7.08,
+     "end": 7.292,
+     "word": "to"
+    },
+    {
+     "start": 7.31,
+     "end": 7.623,
+     "word": "talk"
+    },
+    {
+     "start": 7.65,
+     "end": 8.013,
+     "word": "about"
+    },
+    {
+     "start": 8.045,
+     "end": 8.307,
+     "word": "the"
+    },
+    {
+     "start": 8.33,
+     "end": 8.592,
+     "word": "way"
+    },
+    {
+     "start": 8.615,
+     "end": 8.928,
+     "word": "most"
+    },
+    {
+     "start": 8.955,
+     "end": 9.369,
+     "word": "people"
+    },
+    {
+     "start": 9.405,
+     "end": 9.718,
+     "word": "edit"
+    },
+    {
+     "start": 9.745,
+     "end": 10.108,
+     "word": "their"
+    },
+    {
+     "start": 10.14,
+     "end": 10.605,
+     "word": "videos."
+    }
+   ]
+  },
+  {
+   "start": 11.095,
+   "end": 14.78,
+   "text": "We will get into tools a little later in the episode.",
+   "words": [
+    {
+     "start": 11.095,
+     "end": 11.307,
+     "word": "We"
+    },
+    {
+     "start": 11.325,
+     "end": 11.638,
+     "word": "will"
+    },
+    {
+     "start": 11.665,
+     "end": 11.927,
+     "word": "get"
+    },
+    {
+     "start": 11.95,
+     "end": 12.263,
+     "word": "into"
+    },
+    {
+     "start": 12.29,
+     "end": 12.653,
+     "word": "tools"
+    },
+    {
+     "start": 12.685,
+     "end": 12.887,
+     "word": "a"
+    },
+    {
+     "start": 12.905,
+     "end": 13.319,
+     "word": "little"
+    },
+    {
+     "start": 13.355,
+     "end": 13.718,
+     "word": "later"
+    },
+    {
+     "start": 13.75,
+     "end": 13.962,
+     "word": "in"
+    },
+    {
+     "start": 13.98,
+     "end": 14.242,
+     "word": "the"
+    },
+    {
+     "start": 14.265,
+     "end": 14.78,
+     "word": "episode."
+    }
+   ]
+  },
+  {
+   "start": 15.275,
+   "end": 19.65,
+   "text": "Why do 90 percent of your shorts die in the first three seconds?",
+   "words": [
+    {
+     "start": 15.275,
+     "end": 15.537,
+     "word": "Why"
+    },
+    {
+     "start": 15.56,
+     "end": 15.772,
+     "word": "do"
+    },
+    {
+     "start": 15.79,
+     "end": 16.002,
+     "word": "90"
+    },
+    {
+     "start": 16.02,
+     "end": 16.485,
+     "word": "percent"
+    },
+    {
+     "start": 16.525,
+     "end": 16.737,
+     "word": "of"
+    },
+    {
+     "start": 16.755,
+     "end": 17.068,
+     "word": "your"
+    },
+    {
+     "start": 17.095,
+     "end": 17.509,
+     "word": "shorts"
+    },
+    {
+     "start": 17.545,
+     "end": 17.807,
+     "word": "die"
+    },
+    {
+     "start": 17.83,
+     "end": 18.042,
+     "word": "in"
+    },
+    {
+     "start": 18.06,
+     "end": 18.322,
+     "word": "the"
+    },
+    {
+     "start": 18.345,
+     "end": 18.708,
+     "word": "first"
+    },
+    {
+     "start": 18.74,
+     "end": 19.103,
+     "word": "three"
+    },
+    {
+     "start": 19.135,
+     "end": 19.65,
+     "word": "seconds?"
+    }
+   ]
+  },
+  {
+   "start": 20.145,
+   "end": 23.945,
+   "text": "Because you start with the context instead of the payoff.",
+   "words": [
+    {
+     "start": 20.145,
+     "end": 20.61,
+     "word": "Because"
+    },
+    {
+     "start": 20.65,
+     "end": 20.912,
+     "word": "you"
+    },
+    {
+     "start": 20.935,
+     "end": 21.298,
+     "word": "start"
+    },
+    {
+     "start": 21.33,
+     "end": 21.643,
+     "word": "with"
+    },
+    {
+     "start": 21.67,
+     "end": 21.932,
+     "word": "the"
+    },
+    {
+     "start": 21.955,
+     "end": 22.42,
+     "word": "context"
+    },
+    {
+     "start": 22.46,
+     "end": 22.925,
+     "word": "instead"
+    },
+    {
+     "start": 22.965,
+     "end": 23.177,
+     "word": "of"
+    },
+    {
+     "start": 23.195,
+     "end": 23.457,
+     "word": "the"
+    },
+    {
+     "start": 23.48,
+     "end": 23.945,
+     "word": "payoff."
+    }
+   ]
+  },
+  {
+   "start": 24.435,
+   "end": 28.064,
+   "text": "Nobody scrolling on their phone cares about your intro.",
+   "words": [
+    {
+     "start": 24.435,
+     "end": 24.849,
+     "word": "Nobody"
+    },
+    {
+     "start": 24.885,
+     "end": 25.451,
+     "word": "scrolling"
+    },
+    {
+     "start": 25.5,
+     "end": 25.712,
+     "word": "on"
+    },
+    {
+     "start": 25.73,
+     "end": 26.093,
+     "word": "their"
+    },
+    {
+     "start": 26.125,
+     "end": 26.488,
+     "word": "phone"
+    },
+    {
+     "start": 26.52,
+     "end": 26.883,
+     "word": "cares"
+    },
+    {
+     "start": 26.915,
+     "end": 27.278,
+     "word": "about"
+    },
+    {
+     "start": 27.31,
+     "end": 27.623,
+     "word": "your"
+    },
+    {
+     "start": 27.65,
+     "end": 28.064,
+     "word": "intro."
+    }
+   ]
+  },
+  {
+   "start": 28.55,
+   "end": 32.519,
+   "text": "Put the most surprising sentence first and explain it after.",
+   "words": [
+    {
+     "start": 28.55,
+     "end": 28.812,
+     "word": "Put"
+    },
+    {
+     "start": 28.835,
+     "end": 29.097,
+     "word": "the"
+    },
+    {
+     "start": 29.12,
+     "end": 29.433,
+     "word": "most"
+    },
+    {
+     "start": 29.46,
+     "end": 30.076,
+     "word": "surprising"
+    },
+    {
+     "start": 30.13,
+     "end": 30.645,
+     "word": "sentence"
+    },
+    {
+     "start": 30.69,
+     "end": 31.053,
+     "word": "first"
+    },
+    {
+     "start": 31.085,
+     "end": 31.347,
+     "word": "and"
+    },
+    {
+     "start": 31.37,
+     "end": 31.835,
+     "word": "explain"
+    },
+    {
+     "start": 31.875,
+     "end": 32.087,
+     "word": "it"
+    },
+    {
+     "start": 32.105,
+     "end": 32.519,
+     "word": "after."
+    }
+   ]
+  },
+  {
+   "start": 33.005,
+   "end": 37.085,
+   "text": "That one change doubled the average watch time on my channel.",
+   "words": [
+    {
+     "start": 33.005,
+     "end": 33.318,
+     "word": "That"
+    },
+    {
+     "start": 33.345,
+     "end": 33.607,
+     "word": "one"
+    },
+    {
+     "start": 33.63,
+     "end": 34.044,
+     "word": "change"
+    },
+    {
+     "start": 34.08,
+     "end": 34.545,
+     "word": "doubled"
+    },
+    {
+     "start": 34.585,
+     "end": 34.847,
+     "word": "the"
+    },
+    {
+     "start": 34.87,
+     "end": 35.335,
+     "word": "average"
+    },
+    {
+     "start": 35.375,
+     "end": 35.738,
+     "word": "watch"
+    },
+    {
+     "start": 35.77,
+     "end": 36.083,
+     "word": "time"
+    },
+    {
+     "start": 36.11,
+     "end": 36.322,
+     "word": "on"
+    },
+    {
+     "start": 36.34,
+     "end": 36.552,
+     "word": "my"
+    },
+    {
+     "start": 36.57,
+     "end": 37.085,
+     "word": "channel."
+    }
+   ]
+  },
+  {
+   "start": 37.58,
+   "end": 40.875,
+   "text": "Um, anyway, let me check the chat for a second.",
+   "words": [
+    {
+     "start": 37.58,
+     "end": 37.842,
+     "word": "Um,"
+    },
+    {
+     "start": 37.865,
+     "end": 38.33,
+     "word": "anyway,"
+    },
+    {
+     "start": 38.37,
+     "end": 38.632,
+     "word": "let"
+    },
+    {
+     "start": 38.655,
+     "end": 38.867,
+     "word": "me"
+    },
+    {
+     "start": 38.885,
+     "end": 39.248,
+     "word": "check"
+    },
+    {
+     "start": 39.28,
+     "end": 39.542,
+     "word": "the"
+    },
+    {
+     "start": 39.565,
+     "end": 39.878,
+     "word": "chat"
+    },
+    {
+     "start": 39.905,
+     "end": 40.167,
+     "word": "for"
+    },
+    {
+     "start": 40.19,
+     "end": 40.392,
+     "word": "a"
+    },
+    {
+     "start": 40.41,
+     "end": 40.875,
+     "word": "second."
+    }
+   ]
+  },
+  {
+   "start": 41.365,
+   "end": 46.298,
+   "text": "Right, a few people are asking about the microphone, it is a cheap one.",
+   "words": [
+    {
+     "start": 41.365,
+     "end": 41.779,
+     "word": "Right,"
+    },
+    {
+     "start": 41.815,
+     "end": 42.017,
+     "word": "a"
+    },
+    {
+     "start": 42.035,
+     "end": 42.297,
+     "word": "few"
+    },
+    {
+     "start": 42.32,
+     "end": 42.734,
+     "word": "people"
+    },
+    {
+     "start": 42.77,
+     "end": 43.032,
+     "word": "are"
+    },
+    {
+     "start": 43.055,
+     "end": 43.469,
+     "word": "asking"
+    },
+    {
+     "start": 43.505,
+     "end": 43.868,
+     "word": "about"
+    },
+    {
+     "start": 43.9,
+     "end": 44.162,
+     "word": "the"
+    },
+    {
+     "start": 44.185,
+     "end": 44.852,
+     "word": "microphone,"
+    },
+    {
+     "start": 44.91,
+     "end": 45.122,
+     "word": "it"
+    },
+    {
+     "start": 45.14,
+     "end": 45.352,
+     "word": "is"
+    },
+    {
+     "start": 45.37,
+     "end": 45.572,
+     "word": "a"
+    },
+    {
+     "start": 45.59,
+     "end": 45.953,
+     "word": "cheap"
+    },
+    {
+     "start": 45.985,
+     "end": 46.298,
+     "word": "one."
+    }
+   ]
+  },
+  {
+   "start": 46.775,
+   "end": 50.336,
+   "text": "Here is the biggest mistake I see from new creators.",
+   "words": [
+    {
+     "start": 46.775,
+     "end": 47.088,
+     "word": "Here"
+    },
+    {
+     "start": 47.115,
+     "end": 47.327,
+     "word": "is"
+    },
+    {
+     "start": 47.345,
+     "end": 47.607,
+     "word": "the"
+    },
+    {
+     "start": 47.63,
+     "end": 48.095,
+     "word": "biggest"
+    },
+    {
+     "start": 48.135,
+     "end": 48.6,
+     "word": "mistake"
+    },
+    {
+     "start": 48.64,
+     "end": 48.842,
+     "word": "I"
+    },
+    {
+     "start": 48.86,
+     "end": 49.122,
+     "word": "see"
+    },
+    {
+     "start": 49.145,
+     "end": 49.458,
+     "word": "from"
+    },
+    {
+     "start": 49.485,
+     "end": 49.747,
+     "word": "new"
+    },
+    {
+     "start": 49.77,
+     "end": 50.336,
+     "word": "creators."
+    }
+   ]
+  },
+  {
+   "start": 50.835,
+   "end": 54.484,
+   "text": "They film one long video and never cut it into clips.",
+   "words": [
+    {
+     "start": 50.835,
+     "end": 51.148,
+     "word": "They"
+    },
+    {
+     "start": 51.175,
+     "end": 51.488,
+     "word": "film"
+    },
+    {
+     "start": 51.515,
+     "end": 51.777,
+     "word": "one"
+    },
+    {
+     "start": 51.8,
+     "end": 52.113,
+     "word": "long"
+    },
+    {
+     "start": 52.14,
+     "end": 52.503,
+     "word": "video"
+    },
+    {
+     "start": 52.535,
+     "end": 52.797,
+     "word": "and"
+    },
+    {
+     "start": 52.82,
+     "end": 53.183,
+     "word": "never"
+    },
+    {
+     "start": 53.215,
+     "end": 53.477,
+     "word": "cut"
+    },
+    {
+     "start": 53.5,
+     "end": 53.712,
+     "word": "it"
+    },
+    {
+     "start": 53.73,
+     "end": 54.043,
+     "word": "into"
+    },
+    {
+     "start": 54.07,
+     "end": 54.484,
+     "word": "clips."
+    }
+   ]
+  },
+  {
+   "start": 54.97,
+   "end": 59.785,
+   "text": "One podcast episode can become ten shorts if you find the right moments.",
+   "words": [
+    {
+     "start": 54.97,
+     "end": 55.232,
+     "word": "One"
+    },
+    {
+     "start": 55.255,
+     "end": 55.72,
+     "word": "podcast"
+    },
+    {
+     "start": 55.76,
+     "end": 56.225,
+     "word": "episode"
+    },
+    {
+     "start": 56.265,
+     "end": 56.527,
+     "word": "can"
+    },
+    {
+     "start": 56.55,
+     "end": 56.964,
+     "word": "become"
+    },
+    {
+     "start": 57.0,
+     "end": 57.262,
+     "word": "ten"
+    },
+    {
+     "start": 57.285,
+     "end": 57.699,
+     "word": "shorts"
+    },
+    {
+     "start": 57.735,
+     "end": 57.947,
+     "word": "if"
+    },
+    {
+     "start": 57.965,
+     "end": 58.227,
+     "word": "you"
+    },
+    {
+     "start": 58.25,
+     "end": 58.563,
+     "word": "find"
+    },
+    {
+     "start": 58.59,
+     "end": 58.852,
+     "word": "the"
+    },
+    {
+     "start": 58.875,
+     "end": 59.238,
+     "word": "right"
+    },
+    {
+     "start": 59.27,
+     "end": 59.785,
+     "word": "moments."
+    }
+   ]
+  },
+  {
+   "start": 60.28,
+   "end": 65.463,
+   "text": "You do not need an editor, you need a system that finds the hooks for you.",
+   "words": [
+    {
+     "start": 60.28,
+     "end": 60.542,
+     "word": "You"
+    },
+    {
+     "start": 60.565,
+     "end": 60.777,
+     "word": "do"
+    },
+    {
+     "start": 60.795,
+     "end": 61.057,
+     "word": "not"
+    },
+    {
+     "start": 61.08,
+     "end": 61.393,
+     "word": "need"
+    },
+    {
+     "start": 61.42,
+     "end": 61.632,
+     "word": "an"
+    },
+    {
+     "start": 61.65,
+     "end": 62.115,
+     "word": "editor,"
+    },
+    {
+     "start": 62.155,
+     "end": 62.417,
+     "word": "you"
+    },
+    {
+     "start": 62.44,
+     "end": 62.753,
+     "word": "need"
+    },
+    {
+     "start": 62.78,
+     "end": 62.982,
+     "word": "a"
+    },
+    {
+     "start": 63.0,
+     "end": 63.414,
+     "word": "system"
+    },
+    {
+     "start": 63.45,
+     "end": 63.763,
+     "word": "that"
+    },
+    {
+     "start": 63.79,
+     "end": 64.153,
+     "word": "finds"
+    },
+    {
+     "start": 64.185,
+     "end": 64.447,
+     "word": "the"
+    },
+    {
+     "start": 64.47,
+     "end": 64.833,
+     "word": "hooks"
+    },
+    {
+     "start": 64.865,
+     "end": 65.127,
+     "word": "for"
+    },
+    {
+     "start": 65.15,
+     "end": 65.463,
+     "word": "you."
+    }
+   ]
+  },
+  {
+   "start": 65.94,
+   "end": 70.851,
+   "text": "The secret is simple: transcribe, score every moment, and crop to vertical.",
+   "words": [
+    {
+     "start": 65.94,
+     "end": 66.202,
+     "word": "The"
+    },
+    {
+     "start": 66.225,
+     "end": 66.639,
+     "word": "secret"
+    },
+    {
+     "start": 66.675,
+     "end": 66.887,
+     "word": "is"
+    },
+    {
+     "start": 66.905,
+     "end": 67.37,
+     "word": "simple:"
+    },
+    {
+     "start": 67.41,
+     "end": 68.077,
+     "word": "transcribe,"
+    },
+    {
+     "start": 68.135,
+     "end": 68.498,
+     "word": "score"
+    },
+    {
+     "start": 68.53,
+     "end": 68.893,
+     "word": "every"
+    },
+    {
+     "start": 68.925,
+     "end": 69.39,
+     "word": "moment,"
+    },
+    {
+     "start": 69.43,
+     "end": 69.692,
+     "word": "and"
+    },
+    {
+     "start": 69.715,
+     "end": 70.028,
+     "word": "crop"
+    },
+    {
+     "start": 70.055,
+     "end": 70.267,
+     "word": "to"
+    },
+    {
+     "start": 70.285,
+     "end": 70.851,
+     "word": "vertical."
+    }
+   ]
+  },
+  {
+   "start": 71.35,
+   "end": 76.083,
+   "text": "Okay, that is it for the main part, thanks for staying until the end.",
+   "words": [
+    {
+     "start": 71.35,
+     "end": 71.713,
+     "word": "Okay,"
+    },
+    {
+     "start": 71.745,
+     "end": 72.058,
+     "word": "that"
+    },
+    {
+     "start": 72.085,
+     "end": 72.297,
+     "word": "is"
+    },
+    {
+     "start": 72.315,
+     "end": 72.527,
+     "word": "it"
+    },
+    {
+     "start": 72.545,
+     "end": 72.807,
+     "word": "for"
+    },
+    {
+     "start": 72.83,
+     "end": 73.092,
+     "word": "the"
+    },
+    {
+     "start": 73.115,
+     "end": 73.428,
+     "word": "main"
+    },
+    {
+     "start": 73.455,
+     "end": 73.818,
+     "word": "part,"
+    },
+    {
+     "start": 73.85,
+     "end": 74.264,
+     "word": "thanks"
+    },
+    {
+     "start": 74.3,
+     "end": 74.562,
+     "word": "for"
+    },
+    {
+     "start": 74.585,
+     "end": 75.05,
+     "word": "staying"
+    },
+    {
+     "start": 75.09,
+     "end": 75.453,
+     "word": "until"
+    },
+    {
+     "start": 75.485,
+     "end": 75.747,
+     "word": "the"
+    },
+    {
+     "start": 75.77,
+     "end": 76.083,
+     "word": "end."
+    }
+   ]
+  },
+  {
+   "start": 76.56,
+   "end": 80.673,
+   "text": "Let me know in the comments what you want to see next week.",
+   "words": [
+    {
+     "start": 76.56,
+     "end": 76.822,
+     "word": "Let"
+    },
+    {
+     "start": 76.845,
+     "end": 77.057,
+     "word": "me"
+    },
+    {
+     "start": 77.075,
+     "end": 77.388,
+     "word": "know"
+    },
+    {
+     "start": 77.415,
+     "end": 77.627,
+     "word": "in"
+    },
+    {
+     "start": 77.645,
+     "end": 77.907,
+     "word": "the"
+    },
+    {
+     "start": 77.93,
+     "end": 78.445,
+     "word": "comments"
+    },
+    {
+     "start": 78.49,
+     "end": 78.803,
+     "word": "what"
+    },
+    {
+     "start": 78.83,
+     "end": 79.092,
+     "word": "you"
+    },
+    {
+     "start": 79.115,
+     "end": 79.428,
+     "word": "want"
+    },
+    {
+     "start": 79.455,
+     "end": 79.667,
+     "word": "to"
+    },
+    {
+     "start": 79.685,
+     "end": 79.947,
+     "word": "see"
+    },
+    {
+     "start": 79.97,
+     "end": 80.283,
+     "word": "next"
+    },
+    {
+     "start": 80.31,
+     "end": 80.673,
+     "word": "week."
+    }
+   ]
+  }
+ ]
+}

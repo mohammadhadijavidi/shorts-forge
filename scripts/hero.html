@@ -1,0 +1,91 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: I; src: url("__FONTDIR__/Inter-Regular.otf"); font-weight: 400; }
+@font-face { font-family: I; src: url("__FONTDIR__/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: I; src: url("__FONTDIR__/Inter-Black.otf"); font-weight: 900; }
+:root { --bg:#0b0d12; --panel:#121620; --line:#232a38; --mut:#8b93a7; --txt:#e8ecf4;
+        --acc:#ffd400; --acc2:#ff5c39; --ok:#3df58a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1600px; height: 900px; background: radial-gradient(1200px 600px at 75% 10%, #1b1730 0%, var(--bg) 60%);
+       color: var(--txt); font-family: I, sans-serif; overflow: hidden; position: relative; }
+.left { position: absolute; left: 56px; top: 56px; width: 520px; }
+.brand { font-weight: 900; font-size: 64px; letter-spacing: -2px; line-height: 1; }
+.brand span { color: var(--acc); }
+.tag { margin-top: 18px; font-size: 22px; line-height: 1.45; color: #c5cbd8; }
+.cmd { margin-top: 28px; background: #07090d; border: 1px solid var(--line); border-radius: 12px;
+       padding: 16px 18px; font-family: "DejaVu Sans Mono", monospace; font-size: 15px; line-height: 1.7; color: #b8c0d0; }
+.cmd b { color: var(--ok); font-weight: 400; } .cmd i { color: var(--acc); font-style: normal; }
+.pills { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+.pill { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 7px 14px;
+        font-size: 14px; color: #c9d0de; font-weight: 600; }
+.phones { position: absolute; right: 56px; top: 34px; display: flex; gap: 26px; }
+.phone { width: 300px; }
+.screen { width: 300px; height: 533px; border-radius: 26px; overflow: hidden; border: 3px solid #2b3245;
+          box-shadow: 0 30px 60px rgba(0,0,0,.55); background: #000; }
+.screen img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cap { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: var(--mut); }
+.score { font-weight: 900; color: #111; background: var(--acc); border-radius: 8px; padding: 3px 9px; font-size: 14px; }
+.tl { position: absolute; left: 56px; right: 56px; bottom: 30px; height: 236px; background: rgba(18,22,32,.85);
+      border: 1px solid var(--line); border-radius: 18px; padding: 16px 22px; }
+.tlh { display: flex; justify-content: space-between; font-size: 14px; color: var(--mut); font-weight: 600; }
+.tlh b { color: var(--txt); }
+.track { position: relative; height: 150px; margin-top: 40px; }
+.thumbs { position: absolute; left: 0; right: 0; top: 0; height: 52px; display: flex; gap: 0; border-radius: 8px; overflow: hidden; opacity: .9; }
+.thumbs img { height: 52px; flex: 1; object-fit: cover; }
+.bars { position: absolute; left: 0; right: 0; top: 62px; height: 58px; }
+.bar { position: absolute; bottom: 0; border-radius: 3px 3px 0 0; }
+.sel { position: absolute; top: -4px; height: 128px; border: 2px solid var(--acc); border-radius: 8px;
+       background: rgba(255,212,0,.07); }
+.sel .lab { position: absolute; left: -2px; top: -28px; background: var(--acc); color: #111; font-weight: 900;
+            font-size: 13px; padding: 4px 9px; border-radius: 6px; white-space: nowrap; }
+.axis { position: absolute; left: 0; right: 0; top: 130px; height: 18px; font-size: 12px; color: var(--mut); }
+.axis span { position: absolute; transform: translateX(-50%); }
+.sample { position: absolute; left: 56px; top: 548px; font-size: 13px; color: #6f7890; width: 500px; line-height: 1.5; }
+</style></head>
+<body>
+<div class="left">
+  <div class="brand">shorts<span>-</span>forge</div>
+  <div class="tag">Long video in, ranked vertical shorts out. Whisper transcript, LLM hook scoring,
+    face-tracked 9:16 crop and animated captions, rendered with ffmpeg.</div>
+  <div class="cmd"><b>$</b> pip install "shorts-forge[whisper]"<br>
+    <b>$</b> shorts-forge podcast.mp4 <i>--count 5 --llm openai</i><br>
+    <span style="color:#6f7890">99  15.12-50.69  shorts/01-why-do-90-percent.mp4</span></div>
+  <div class="pills"><div class="pill">faster-whisper</div><div class="pill">OpenAI / Anthropic / Ollama</div>
+    <div class="pill">YuNet face tracking</div><div class="pill">word-by-word captions</div><div class="pill">batch export</div></div>
+</div>
+<div class="sample">Frames below and right are real renders from <code>shorts-forge demo</code>:
+  a synthetic test video (an original illustrated presenter, not a real person, walking across a drawn studio set) with a hand-written sample transcript.</div>
+<div class="phones" id="phones"></div>
+<div class="tl">
+  <div class="tlh"><div><b>Source 16:9</b> &nbsp; sentence hook scores (heuristic picker) and selected clips</div><div id="dur"></div></div>
+  <div class="track" id="track">
+    <div class="thumbs" id="thumbs"></div>
+    <div class="bars" id="bars"></div>
+    <div class="axis" id="axis"></div>
+  </div>
+</div>
+<script>
+const D = __DATA__;
+const ph = document.getElementById('phones');
+const labels = ['title card + hook', 'active word pop', 'second short'];
+D.phones.forEach((p, i) => {
+  ph.insertAdjacentHTML('beforeend', `<div class="phone"><div class="screen"><img src="${p.img}"></div>
+    <div class="cap"><span>#${p.idx} &middot; ${labels[i]} &middot; ${p.t.toFixed(1)}s</span><span class="score">hook ${p.score}</span></div></div>`);
+});
+document.getElementById('thumbs').innerHTML = D.thumbs.map(t => `<img src="${t}">`).join('');
+const dur = D.duration, X = s => (s / dur * 100) + '%';
+document.getElementById('dur').textContent = `${dur.toFixed(1)} s · ${D.bars.length} sentences · ${D.clips.length} shorts`;
+const bars = document.getElementById('bars');
+D.bars.forEach(b => {
+  const c = b.score >= 70 ? '#ffd400' : b.score >= 45 ? '#ff9a3c' : '#3a4256';
+  bars.insertAdjacentHTML('beforeend', `<div class="bar" style="left:${X(b.start)};width:calc(${X(b.end - b.start)} - 3px);height:${8 + b.score * 0.5}px;background:${c}"></div>`);
+});
+const tr = document.getElementById('track');
+D.clips.forEach(c => {
+  tr.insertAdjacentHTML('beforeend', `<div class="sel" style="left:${X(c.start)};width:${X(c.end - c.start)}"><div class="lab">#${c.idx} hook ${c.score} · ${(c.end - c.start).toFixed(0)}s</div></div>`);
+});
+const ax = document.getElementById('axis');
+for (let s = 0; s <= dur; s += 10) ax.insertAdjacentHTML('beforeend', `<span style="left:${X(s)}">${s}s</span>`);
+</script>
+</body></html>

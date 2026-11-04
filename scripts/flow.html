@@ -1,0 +1,71 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: I; src: url("__FONTDIR__/Inter-Regular.otf"); font-weight: 400; }
+@font-face { font-family: I; src: url("__FONTDIR__/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: I; src: url("__FONTDIR__/Inter-Black.otf"); font-weight: 900; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 1600px; height: 720px; background: #0b0d12; color: #e8ecf4; font-family: I, sans-serif; overflow: hidden; }
+h1 { position: absolute; left: 60px; top: 44px; font-size: 34px; font-weight: 900; letter-spacing: -1px; }
+h1 span { color: #ffd400; }
+.sub { position: absolute; left: 60px; top: 92px; color: #8b93a7; font-size: 17px; }
+svg { position: absolute; left: 0; top: 0; }
+.box { position: absolute; background: #121620; border: 1px solid #262e3f; border-radius: 16px; padding: 18px 20px; }
+.box h3 { font-size: 19px; font-weight: 900; margin-bottom: 8px; }
+.box p { font-size: 14.5px; line-height: 1.5; color: #b9c1d1; }
+.box .k { display: inline-block; font-size: 12px; font-weight: 600; color: #111; background: #ffd400; border-radius: 6px; padding: 2px 8px; margin-bottom: 10px; }
+.box.alt .k { background: #7cc4ff; }
+.box.out { border-color: #ffd400; }
+.mono { font-family: "DejaVu Sans Mono", monospace; font-size: 13px; color: #9fe8bd; }
+.note { position: absolute; left: 60px; bottom: 34px; color: #6f7890; font-size: 14px; }
+</style></head>
+<body>
+<h1>How <span>shorts-forge</span> works</h1>
+<div class="sub">One command per video (or a whole folder). Every stage has an offline fallback.</div>
+<svg width="1600" height="720">
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+    <path d="M0,0 L10,5 L0,10 z" fill="#5d6680"/></marker></defs>
+  <g stroke="#5d6680" stroke-width="2.2" fill="none" marker-end="url(#a)">
+    <path d="M330,250 L380,250"/>
+    <path d="M650,250 L700,250"/>
+    <path d="M970,250 L1020,250"/>
+    <path d="M1155,355 L1155,420 L1155,440"/>
+    <path d="M1020,535 L970,535"/>
+    <path d="M700,535 L650,535"/>
+    <path d="M380,535 L330,535"/>
+  </g>
+</svg>
+<div class="box" style="left:60px;top:150px;width:270px;height:205px">
+  <div class="k">1 · input</div><h3>Long video</h3>
+  <p>Podcast, interview, stream or lecture. Any size ffmpeg can read. Batch: many files at once.</p>
+  <p class="mono" style="margin-top:10px">ffprobe → size, fps, audio</p></div>
+<div class="box" style="left:380px;top:150px;width:270px;height:205px">
+  <div class="k">2 · transcribe</div><h3>Word timestamps</h3>
+  <p>faster-whisper locally, or any OpenAI-compatible STT API, or a saved transcript JSON.</p>
+  <p class="mono" style="margin-top:10px">transcript.json</p></div>
+<div class="box" style="left:700px;top:150px;width:270px;height:205px">
+  <div class="k">3 · sentences</div><h3>Clip-safe units</h3>
+  <p>Words regrouped on punctuation and pauses, so a short never starts or ends mid-word.</p></div>
+<div class="box alt" style="left:1020px;top:150px;width:520px;height:205px">
+  <div class="k">4 · pick highlights</div><h3>Hook scoring</h3>
+  <p><b>LLM</b> (OpenAI, OpenRouter, Groq, Ollama, LM Studio, Anthropic) returns
+    start/end sentence ids, title, hook score 0-100, reason. Output is validated: ids clamped,
+    durations fixed, overlaps removed.<br><b>Heuristic</b> (no key): questions, numbers, "you",
+    curiosity words, filler and pace.</p></div>
+<div class="box" style="left:1020px;top:440px;width:520px;height:205px">
+  <div class="k">5 · reframe 9:16</div><h3>Face tracking</h3>
+  <p>OpenCV samples 4 frames/s; YuNet (bundled 230 KB ONNX) or Haar finds the speaker.
+    Gap fill, median + EMA smoothing, a dead zone so the camera holds still, then
+    Douglas-Peucker keyframes → one ffmpeg crop expression. No face: center crop or blurred fit.</p></div>
+<div class="box" style="left:700px;top:440px;width:270px;height:205px">
+  <div class="k">6 · captions</div><h3>Animated ASS</h3>
+  <p>2-4 word phrases, active word coloured and popped. Styles: bold, karaoke, clean.
+    RTL (Persian/Arabic) supported.</p></div>
+<div class="box" style="left:380px;top:440px;width:270px;height:205px">
+  <div class="k">7 · render</div><h3>One ffmpeg pass</h3>
+  <p>Cut + crop + scale + libass burn + H.264/AAC, 1080×1920, faststart. Thumbnail per clip.</p></div>
+<div class="box out" style="left:60px;top:440px;width:270px;height:205px">
+  <div class="k">8 · output</div><h3>Ranked shorts</h3>
+  <p class="mono">01-why-do-90-percent.mp4<br>01-why-do-90-percent.ass<br>01-why-do-90-percent.jpg<br>manifest.json</p></div>
+<div class="note">manifest.json records every decision: cut points, hook score and reason, picker, detector and crop keyframes.</div>
+</body></html>
